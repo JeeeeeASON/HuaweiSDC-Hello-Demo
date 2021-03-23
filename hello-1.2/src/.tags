@@ -1,0 +1,207 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+APP_EVENT_H	event.h	2;"	d
+APP_EVENT_MAX	main.c	76;"	d	file:
+APP_LOG	log.h	22;"	d
+APP_LOG_H	log.h	2;"	d
+APP_MODULE_H	module.h	3;"	d
+APP_NAME_MAX	module.h	14;"	d
+APP_NULL_MODULE	module.h	55;"	d
+ARCH	Makefile	/^ARCH=aarch64$/;"	m
+ARCH	Makefile	/^ARCH=armv7l$/;"	m
+BINDIR	Makefile	/^BINDIR = $(TOPDIR)\/bin$/;"	m
+CC	Makefile	/^CC = aarch64-himix100-linux-gcc$/;"	m
+CC	Makefile	/^CC = arm-linux-gnueabi-gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -D_XOPEN_SOURCE -D_GNU_SOURCE -Wall -Werror -I..\/include$/;"	m
+CONF_KEY_ADDR	log.c	71;"	d	file:
+CONF_KEY_ALL_COUNTER	meta.c	59;"	d	file:
+CONF_KEY_APP_NAME	gateway.c	46;"	d	file:
+CONF_KEY_CARNUMBER	meta.c	56;"	d	file:
+CONF_KEY_COUNTER	meta.c	58;"	d	file:
+CONF_KEY_LASTCAR	meta.c	57;"	d	file:
+LD	Makefile	/^LD = aarch64-himix100-linux-gcc$/;"	m
+LD	Makefile	/^LD = arm-linux-gnueabi-gcc$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS =$/;"	m
+LIBS	Makefile	/^LIBS = $/;"	m
+LOGD	log.h	29;"	d
+LOGE	log.h	32;"	d
+LOGI	log.h	30;"	d
+LOGW	log.h	31;"	d
+LOG_ADDR_LEN	log.c	15;"	d	file:
+LOG_BUF_LEN	log.c	16;"	d	file:
+LOG_FILE_LEN	log.c	17;"	d	file:
+MODULE_CONFIG_H	config.h	3;"	d
+MODULE_GATEWAY_H	gateway.h	3;"	d
+MODULE_METADATA_H	meta.h	3;"	d
+MODULE_OSD_H	osd.h	3;"	d
+OBJS	Makefile	/^OBJS = $(patsubst %.c,%.o,$(SOURCES))$/;"	m
+OSD_DESC_ALL_COUNTER	meta.c	64;"	d	file:
+OSD_DESC_CARNUMBER	meta.c	61;"	d	file:
+OSD_DESC_COUNTER	meta.c	63;"	d	file:
+OSD_DESC_LASTCAR	meta.c	62;"	d	file:
+OSD_KEY_ALL_COUNTER	meta.c	69;"	d	file:
+OSD_KEY_APP_DESC	gateway.c	48;"	d	file:
+OSD_KEY_APP_NAME	gateway.c	47;"	d	file:
+OSD_KEY_CARNUMBER	meta.c	66;"	d	file:
+OSD_KEY_COUNTER	meta.c	68;"	d	file:
+OSD_KEY_LASTCAR	meta.c	67;"	d	file:
+SDC_CLIENT_H	sdc_client.h	9;"	d
+SDC_RECONN_DEFAULT	sdc_client.c	19;"	d	file:
+SOURCES	Makefile	/^SOURCES = $(wildcard *.c)$/;"	m
+TIME_UNIT	event.c	57;"	d	file:
+TLV_CAR_NUMBER	meta.c	264;"	d	file:
+TLV_NEXT	meta.c	259;"	d	file:
+TOPDIR	Makefile	/^TOPDIR = ..$/;"	m
+addr	log.c	/^    char addr[LOG_ADDR_LEN];$/;"	m	struct:log_ctx	file:
+all_count	meta.c	/^    uint32_t all_count;$/;"	m	struct:module_metadata_ctx	file:
+app	module.h	/^    struct app_ctx* app;$/;"	m	struct:app_module	typeref:struct:app_module::app_ctx
+app_ctx	module.h	/^struct app_ctx {$/;"	s
+app_ctx_init	main.c	/^static void app_ctx_init(struct app_ctx* app_ctx, int epoll_fd)$/;"	f	file:
+app_event	event.h	/^struct app_event {$/;"	s
+app_event_add	event.c	/^int app_event_add(struct app_event* event, uint32_t events, struct app_ctx* app_ctx)$/;"	f
+app_event_del	event.c	/^void app_event_del(struct app_event* event, struct app_ctx* app_ctx)$/;"	f
+app_event_del_close	event.c	/^void app_event_del_close(struct app_event* event, struct app_ctx* app_ctx)$/;"	f
+app_event_init	event.c	/^void app_event_init(struct app_event* app_event, int fd, pf_app_event_handle handle)$/;"	f
+app_event_mod	event.c	/^int app_event_mod(struct app_event* event, uint32_t events, struct app_ctx* app_ctx)$/;"	f
+app_event_run	main.c	/^static int app_event_run(struct app_ctx* app_ctx)$/;"	f	file:
+app_gateway_connect	gateway.c	/^static int app_gateway_connect(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+app_gateway_response	gateway.c	/^static void app_gateway_response(struct sdc_client* client, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
+app_gettid	log.h	18;"	d
+app_log	log.c	/^void app_log(int leve, const char* format, ...)$/;"	f
+app_module	module.h	/^struct app_module {$/;"	s
+app_timer	event.h	/^struct app_timer {$/;"	s
+app_timer_add	event.c	/^int app_timer_add(struct app_timer* timer, uint32_t timeout, uint32_t interval, struct app_ctx* app_ctx)$/;"	f
+app_timer_del	event.c	/^void app_timer_del(struct app_timer* timer, struct app_ctx* app_ctx)$/;"	f
+app_timer_handle	event.c	/^static void app_timer_handle(struct app_event* app_event, uint32_t events, struct app_ctx* app_ctx)$/;"	f	file:
+app_timer_init	event.c	/^void app_timer_init(struct app_timer* timer, pf_app_timer_handle handle)$/;"	f
+base	config.c	/^    struct sdc_client base;$/;"	m	struct:module_config_ctx	typeref:struct:module_config_ctx::sdc_client	file:
+base	event.h	/^    struct app_event base;$/;"	m	struct:app_timer	typeref:struct:app_timer::app_event
+base	gateway.c	/^    struct sdc_client base;$/;"	m	struct:gateway_ctx	typeref:struct:gateway_ctx::sdc_client	file:
+base	log.c	/^    struct sdc_client base;$/;"	m	struct:log_ctx	typeref:struct:log_ctx::sdc_client	file:
+base	meta.c	/^    struct sdc_client base;$/;"	m	struct:module_metadata_ctx	typeref:struct:module_metadata_ctx::sdc_client	file:
+base	osd.c	/^    struct sdc_client base;$/;"	m	struct:module_osd_ctx	typeref:struct:module_osd_ctx::sdc_client	file:
+buf	log.c	/^    char buf[LOG_BUF_LEN];$/;"	m	struct:log_ctx	file:
+car_number	meta.c	/^    char car_number[32];$/;"	m	struct:module_metadata_ctx	file:
+close	sdc_client.h	/^    void (*close)(struct sdc_client* client, struct app_ctx* app_ctx);$/;"	m	struct:sdc_client_operations
+config_close	config.c	/^static void config_close(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+config_get	module.h	/^    int (*config_get)(struct app_module* module, struct sdc_config_param* params, int cnt);$/;"	m	struct:app_module
+config_get_end	main.c	/^static int config_get_end(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+config_get_param	config.c	/^static void config_get_param(struct module_config_ctx* config_ctx, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
+config_handle_error	config.c	/^static void config_handle_error(struct sdc_client* client, int err, struct app_ctx* app_ctx)$/;"	f	file:
+config_handle_request	config.c	/^static void config_handle_request(struct sdc_client* client, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
+config_handle_response	config.c	/^static void config_handle_response(struct sdc_client* client, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
+config_open	config.c	/^static int config_open(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+config_simple_get	main.c	/^int config_simple_get(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f
+config_simple_update	main.c	/^int config_simple_update(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f
+config_update	module.h	/^    int (*config_update)(struct app_module* module, struct sdc_config_param* params, int cnt);$/;"	m	struct:app_module
+config_update_end	main.c	/^static int config_update_end(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+config_update_param	config.c	/^static void config_update_param(struct module_config_ctx* config_ctx, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
+connected	sdc_client.h	/^    unsigned int connected: 1;$/;"	m	struct:sdc_client
+container_of	event.h	13;"	d
+count	meta.c	/^    uint32_t count;$/;"	m	struct:module_metadata_ctx	file:
+epoll_fd	module.h	/^    int epoll_fd;$/;"	m	struct:app_ctx
+fd	event.h	/^    int fd;$/;"	m	struct:app_event
+fd	log.c	/^    int fd;$/;"	m	struct:log_ctx	file:
+file	log.c	/^    char file[LOG_FILE_LEN];$/;"	m	struct:log_ctx	file:
+g_app_log_level	log.c	/^int g_app_log_level = LOG_DEBUG;$/;"	v
+g_config_ctx	config.c	/^static struct module_config_ctx g_config_ctx = {$/;"	v	typeref:struct:module_config_ctx	file:
+g_config_ops	config.c	/^static const struct sdc_client_operations g_config_ops = {$/;"	v	typeref:struct:sdc_client_operations	file:
+g_gateway_ctx	gateway.c	/^static struct gateway_ctx g_gateway_ctx = {$/;"	v	typeref:struct:gateway_ctx	file:
+g_gateway_ops	gateway.c	/^static const struct sdc_client_operations g_gateway_ops = {$/;"	v	typeref:struct:sdc_client_operations	file:
+g_gateway_ops	gateway.c	/^static const struct sdc_client_operations g_gateway_ops;$/;"	v	typeref:struct:sdc_client_operations	file:
+g_log_ctx	log.c	/^static struct log_ctx g_log_ctx = {$/;"	v	typeref:struct:log_ctx	file:
+g_log_ops	log.c	/^static const struct sdc_client_operations g_log_ops = {$/;"	v	typeref:struct:sdc_client_operations	file:
+g_metadata_ctx	meta.c	/^static struct module_metadata_ctx g_metadata_ctx = {$/;"	v	typeref:struct:module_metadata_ctx	file:
+g_metadata_ops	meta.c	/^static const struct sdc_client_operations g_metadata_ops = {$/;"	v	typeref:struct:sdc_client_operations	file:
+g_metadata_ops	meta.c	/^static const struct sdc_client_operations g_metadata_ops;$/;"	v	typeref:struct:sdc_client_operations	file:
+g_module_end	main.c	/^static struct app_module g_module_end ;$/;"	v	typeref:struct:app_module	file:
+g_module_end	main.c	/^static struct app_module g_module_end = {$/;"	v	typeref:struct:app_module	file:
+g_modules	main.c	/^static const pf_module_init g_modules[] = {$/;"	v	file:
+g_null_ops	sdc_client.c	/^static const struct sdc_client_operations g_null_ops = {};$/;"	v	typeref:struct:sdc_client_operations	file:
+g_osd_ctx	osd.c	/^static struct module_osd_ctx g_osd_ctx = {$/;"	v	typeref:struct:module_osd_ctx	file:
+g_osd_ops	osd.c	/^static const struct sdc_client_operations g_osd_ops = {$/;"	v	typeref:struct:sdc_client_operations	file:
+gateway_config_get	gateway.c	/^static int gateway_config_get(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+gateway_config_update	gateway.c	/^static int gateway_config_update(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+gateway_ctx	gateway.c	/^struct gateway_ctx {$/;"	s	file:
+gateway_osd_connect	gateway.c	/^static void gateway_osd_connect(struct app_module* module)$/;"	f	file:
+handle	event.h	/^    pf_app_event_handle handle;$/;"	m	struct:app_event
+handle	event.h	/^    pf_app_timer_handle handle;$/;"	m	struct:app_timer
+handle_error	sdc_client.h	/^    void (*handle_error)(struct sdc_client* client, int errno, struct app_ctx* app_ctx);$/;"	m	struct:sdc_client_operations
+handle_request	sdc_client.h	/^    void (*handle_request)(struct sdc_client* client, struct sdc_common_head* head, struct app_ctx* app_ctx);$/;"	m	struct:sdc_client_operations
+handle_response	sdc_client.h	/^    void (*handle_response)(struct sdc_client* client, struct sdc_common_head* head, struct app_ctx* app_ctx);$/;"	m	struct:sdc_client_operations
+interval	event.h	/^    int interval;$/;"	m	struct:app_timer
+last_car	meta.c	/^    char last_car[64];$/;"	m	struct:module_metadata_ctx	file:
+len	meta.c	/^    uint32_t len;$/;"	m	struct:tlv	file:
+log_config_get	log.c	/^static int log_config_get(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+log_config_update	log.c	/^static int log_config_update(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+log_connect	log.c	/^static void log_connect(struct log_ctx* log_ctx)$/;"	f	file:
+log_ctx	log.c	/^struct log_ctx {$/;"	s	file:
+log_on_connect	log.c	/^static int log_on_connect(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+main	main.c	/^int main(int argc, char* argv[])$/;"	f
+meta_config_get	meta.c	/^static int meta_config_get(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+meta_config_update	meta.c	/^static int meta_config_update(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+meta_osd_connect	meta.c	/^static void meta_osd_connect(struct app_module* module)$/;"	f	file:
+metadata_close	meta.c	/^static void metadata_close(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+metadata_connect	meta.c	/^static int metadata_connect(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+metadata_handle_error	meta.c	/^static void metadata_handle_error(struct sdc_client* client, int err, struct app_ctx* app_ctx)$/;"	f	file:
+metadata_handle_response	meta.c	/^static void metadata_handle_response(struct sdc_client* client, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
+metadata_process	meta.c	/^static void metadata_process(struct sdc_client* client, struct paas_event* paas_event, uint32_t len, struct app_ctx* app_ctx)$/;"	f	file:
+module	config.c	/^    struct app_module module;$/;"	m	struct:module_config_ctx	typeref:struct:module_config_ctx::app_module	file:
+module	gateway.c	/^    struct app_module module;$/;"	m	struct:gateway_ctx	typeref:struct:gateway_ctx::app_module	file:
+module	log.c	/^    struct app_module module;$/;"	m	struct:log_ctx	typeref:struct:log_ctx::app_module	file:
+module	meta.c	/^    struct app_module module;$/;"	m	struct:module_metadata_ctx	typeref:struct:module_metadata_ctx::app_module	file:
+module	osd.c	/^    struct app_module module;$/;"	m	struct:module_osd_ctx	typeref:struct:module_osd_ctx::app_module	file:
+module_config_ctx	config.c	/^struct module_config_ctx {$/;"	s	file:
+module_config_init	config.c	/^struct app_module* module_config_init(struct app_ctx* app_ctx)$/;"	f
+module_gateway_init	gateway.c	/^struct app_module* module_gateway_init(struct app_ctx* app_ctx)$/;"	f
+module_list	module.h	/^    struct app_module* module_list;$/;"	m	struct:app_ctx	typeref:struct:app_ctx::app_module
+module_log_init	log.c	/^struct app_module* module_log_init(struct app_ctx* ctx)$/;"	f
+module_metadata_ctx	meta.c	/^struct module_metadata_ctx {$/;"	s	file:
+module_metadata_init	meta.c	/^struct app_module* module_metadata_init(struct app_ctx* app_ctx)$/;"	f
+module_osd_ctx	osd.c	/^struct module_osd_ctx {$/;"	s	file:
+module_osd_init	osd.c	/^struct app_module* module_osd_init(struct app_ctx* app_ctx)$/;"	f
+name	module.h	/^    char name[APP_NAME_MAX];$/;"	m	struct:app_ctx
+name	module.h	/^    const char* name;$/;"	m	struct:app_module
+next	module.h	/^    struct app_module* next;$/;"	m	struct:app_module	typeref:struct:app_module::app_module
+open	sdc_client.h	/^    int (*open)(struct sdc_client* client, struct app_ctx* app_ctx);$/;"	m	struct:sdc_client_operations
+osd_close	osd.c	/^static void osd_close(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+osd_connect	module.h	/^    void (*osd_connect)(struct app_module* module);$/;"	m	struct:app_module
+osd_connect	osd.c	/^static int osd_connect(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+osd_connect_end	main.c	/^static void osd_connect_end(struct app_module* module)$/;"	f	file:
+osd_desc_register	osd.c	/^void osd_desc_register(const char* key, const char* desc, uint32_t lang)$/;"	f
+osd_handle_error	osd.c	/^static void osd_handle_error(struct sdc_client* client, int err, struct app_ctx* app_ctx)$/;"	f	file:
+osd_handle_response	osd.c	/^static void osd_handle_response(struct sdc_client* client, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
+osd_name_register	osd.c	/^void osd_name_register(const char* key)$/;"	f
+osd_simple_connect	main.c	/^void osd_simple_connect(struct app_module* module)$/;"	f
+osd_update	osd.c	/^void osd_update(const char* key, const char* value)$/;"	f
+osd_update_uint	osd.c	/^void osd_update_uint(const char* key, uint32_t val)$/;"	f
+pf_app_event_handle	event.h	/^typedef void (*pf_app_event_handle)(struct app_event* event, uint32_t events, struct app_ctx* app_ctx);$/;"	t
+pf_app_timer_handle	event.h	/^typedef void (*pf_app_timer_handle)(struct app_timer* timer, struct app_ctx* app_ctx);$/;"	t
+pf_module_init	module.h	/^typedef struct app_module* (*pf_module_init)(struct app_ctx* ctx);$/;"	t	typeref:struct:pf_module_init
+reconn_interval	sdc_client.h	/^    int reconn_interval;$/;"	m	struct:sdc_client
+reconn_timer	sdc_client.h	/^    struct app_timer reconn_timer;$/;"	m	struct:sdc_client	typeref:struct:sdc_client::app_timer
+sdc_client	sdc_client.h	/^struct sdc_client {$/;"	s
+sdc_client_close	sdc_client.c	/^void sdc_client_close(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f
+sdc_client_connect	sdc_client.c	/^int sdc_client_connect(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f
+sdc_client_fd	sdc_client.h	/^static inline int sdc_client_fd(const struct sdc_client* client)$/;"	f
+sdc_client_init	sdc_client.c	/^void sdc_client_init(struct sdc_client* client, const char* server_name, int reconn_interval, const struct sdc_client_operations* sdc_ops)$/;"	f
+sdc_client_on_connect	sdc_client.c	/^static void sdc_client_on_connect(struct app_event* app_event, uint32_t events, struct app_ctx* app_ctx)$/;"	f	file:
+sdc_client_on_input	sdc_client.c	/^static void sdc_client_on_input(struct app_event* app_event, uint32_t events, struct app_ctx* app_ctx)$/;"	f	file:
+sdc_client_operations	sdc_client.h	/^struct sdc_client_operations {$/;"	s
+sdc_client_reconnect	sdc_client.c	/^static int sdc_client_reconnect(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+sdc_client_try_connect	sdc_client.c	/^static void sdc_client_try_connect(struct app_timer* app_timer, struct app_ctx* app_ctx)$/;"	f	file:
+sdc_event	sdc_client.h	/^    struct app_event sdc_event;$/;"	m	struct:sdc_client	typeref:struct:sdc_client::app_event
+sdc_ops	sdc_client.h	/^    const struct sdc_client_operations* sdc_ops;$/;"	m	struct:sdc_client	typeref:struct:sdc_client::sdc_client_operations
+server_name	sdc_client.h	/^    const char* server_name;$/;"	m	struct:sdc_client
+shm_mmap	meta.c	/^static void* shm_mmap(struct paas_shm_cached_event* shm)$/;"	f	file:
+shm_munmap	meta.c	/^static void shm_munmap(struct paas_shm_cached_event* shm, void* virt_addr)$/;"	f	file:
+str_all_count	meta.c	/^    char str_all_count[32];$/;"	m	struct:module_metadata_ctx	file:
+str_count	meta.c	/^    char str_count[32];$/;"	m	struct:module_metadata_ctx	file:
+tlv	meta.c	/^struct tlv {$/;"	s	file:
+tlv_for_each	meta.c	261;"	d	file:
+type	meta.c	/^    uint32_t type;$/;"	m	struct:tlv	file:
+val	meta.c	/^    char val[0];$/;"	m	struct:tlv	file:

@@ -1,0 +1,34 @@
+TOPDIR = ..
+BINDIR = $(TOPDIR)/bin
+
+ARCH=aarch64
+
+ifeq ($(ARCH), aarch64)
+CC = aarch64-himix100-linux-gcc
+LD = aarch64-himix100-linux-gcc
+else
+ARCH=armv7l
+CC = arm-linux-gnueabi-gcc
+LD = arm-linux-gnueabi-gcc
+endif
+
+SOURCES = $(wildcard *.c)
+OBJS = $(patsubst %.c,%.o,$(SOURCES))
+
+CFLAGS = -D_XOPEN_SOURCE -D_GNU_SOURCE -Wall -Werror -I../include
+LDFLAGS =
+LIBS = 
+all: main
+clean:
+	$(RM) main $(OBJS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -o $@ -c $<
+
+main: $(OBJS)
+	$(LD) $(LDFLAGS) -o $@ $^ $(LIBS)
+
+install: main
+	mkdir -p $(BINDIR)
+	install -m 755 main $(BINDIR)
+	cd .. && rpmbuild -bb --target=$(ARCH) hello.spec
