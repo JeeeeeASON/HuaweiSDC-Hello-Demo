@@ -15,9 +15,15 @@
 extern "C" {
 #endif
 
-struct sdc_common_head;
-struct sdc_client_operations;
+struct sdc_common_head; //APP作为客户端与服务层的.sdc文件作为服务器传递消息报时所用的消息头。
+struct sdc_client_operations;   //APP的操作
 
+/**
+ * 代表APP作为客户端的结构体，其成员列表如下：
+ * sdc_event：一个app_event结构体，用来将APP行为翻译为客户端行为。
+ * reconn_timer：用于在客户端重连时计时。
+ * sdc_ops：
+ */
 struct sdc_client {
     struct app_event sdc_event;
     struct app_timer reconn_timer;
