@@ -22,7 +22,10 @@ struct sdc_client_operations;   //APP的操作
  * 代表APP作为客户端的结构体，其成员列表如下：
  * sdc_event：一个app_event结构体，用来将APP行为翻译为客户端行为。
  * reconn_timer：用于在客户端重连时计时。
- * sdc_ops：
+ * sdc_ops：一个常量结构体，其成员是一系列函数指针，代表所有作为一个sdc_client可能采取的操作。
+ * server_name：作为服务器被打开的服务文件（如video.iaas.sdc）路径。
+ * reconn_interval：连接服务器失败时尝试重新连接的间隔。
+ * connected：连接成功的指示变量。
  */
 struct sdc_client {
     struct app_event sdc_event;
@@ -32,6 +35,7 @@ struct sdc_client {
     int reconn_interval;
     unsigned int connected: 1;
 };
+
 
 static inline int sdc_client_fd(const struct sdc_client* client)
 {
