@@ -55,16 +55,16 @@ int config_simple_update(struct app_module* module, struct sdc_config_param* par
 void osd_simple_connect(struct app_module* module);
 
 /**
- * [APP_NULL_MODULE APP的默认模块内容，用于某一个app_module中函数指针为空时，将其置为默认值]
+ * [APP_NULL_MODULE APP的默认模块内容，用于某一个app_module中函数指针为空时，将其置为默认值，如n.config_get置为默认的config_simple_get]
  * @param  n [模块名，或者说app_module的变量名]
  * @return   [无返回值]
  */
 #define APP_NULL_MODULE(n) \
     { \
-        .config_get = config_simple_get, \  //n.config_get置为默认的config_simple_get
-        .config_update = config_simple_update, \    //作用如上
-        .osd_connect = osd_simple_connect, \    //作用如上
-        .name = (n), \  //作用如上
+        .config_get = config_simple_get, \
+        .config_update = config_simple_update, \
+        .osd_connect = osd_simple_connect, \
+        .name = (n), \
     }
 
 #ifdef __cplusplus
