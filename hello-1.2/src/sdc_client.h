@@ -59,6 +59,14 @@ static inline int sdc_client_fd(const struct sdc_client* client)
     return client->sdc_event.fd;
 }
 
+/**
+ * 记录每一个sdc_client的可能操作的操作集结构体，其成员分别是一系列函数指针：
+ * *open：打开
+ * *close：关闭
+ * *handle_request：发送请求的句柄。
+ * *handle_response：响应请求的句柄。
+ * *handle_error：处理错误的句柄。
+ */
 struct sdc_client_operations {
     int (*open)(struct sdc_client* client, struct app_ctx* app_ctx);
     void (*close)(struct sdc_client* client, struct app_ctx* app_ctx);

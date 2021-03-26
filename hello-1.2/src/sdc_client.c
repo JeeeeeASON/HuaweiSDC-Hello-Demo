@@ -18,16 +18,30 @@ static const struct sdc_client_operations g_null_ops = {};
 
 #define SDC_RECONN_DEFAULT 5000
 
+/**
+ * [sdc_client_init 对任意sdc_client进行初始化。]
+ * @param client          [将要初始化的sdc_client]
+ * @param server_name     [需要连接的服务包路径]
+ * @param reconn_interval [连接失败时，尝试重连的时间间隔，如果为0则会被置为默认的重连间隔SDC_RECONN_DEFAULT]
+ * @param sdc_ops         [该客户端可能的操作集，如果为null则会被指向一个空的操作集]
+ */
 void sdc_client_init(struct sdc_client* client, const char* server_name, int reconn_interval, const struct sdc_client_operations* sdc_ops)
 {
-    app_timer_init(&client->reconn_timer, sdc_client_try_connect);
-    app_event_init(&client->sdc_event, -1, 0);
+    app_timer_init(&client->reconn_timer, sdc_client_try_connect);  //初始化一个计时器。
+    app_event_init(&client->sdc_event, -1, 0);  //初始化本客户端所对应的事件。
+    
     client->server_name = server_name;
     client->reconn_interval = reconn_interval ? reconn_interval : SDC_RECONN_DEFAULT;
     client->sdc_ops = sdc_ops ? sdc_ops : &g_null_ops;
     client->connected = 0;
 }
 
+/**
+ * [sdc_client_connect description]
+ * @param  client  [description]
+ * @param  app_ctx [description]
+ * @return         [description]
+ */
 int sdc_client_connect(struct sdc_client* client, struct app_ctx* app_ctx)
 {
     int nret;
