@@ -37,10 +37,10 @@ void sdc_client_init(struct sdc_client* client, const char* server_name, int rec
 }
 
 /**
- * [sdc_client_connect description]
- * @param  client  [description]
- * @param  app_ctx [description]
- * @return         [description]
+ * [sdc_client_connect 打开客户端对应的服务器文件，若失败则不断尝试打开。同时记录日志。对客户端代表的事件进行初始化并将事件添加进epoll列表。]
+ * @param  client  [记载事件的客户端]
+ * @param  app_ctx [APP运行环境]
+ * @return         [app_event_add()的返回值，添加事件的返回号，标志连接失败或者添加epoll事件成功与否。]
  */
 int sdc_client_connect(struct sdc_client* client, struct app_ctx* app_ctx)
 {
@@ -49,10 +49,10 @@ int sdc_client_connect(struct sdc_client* client, struct app_ctx* app_ctx)
 
     if (fd == -1) {
         LOGE("connect %s fail, %m", client->server_name);
-        if (client->reconn_interval) {
+        if (client->reconn_interval) {  //若reconn_interval大于0，则持续尝试重连。
             return sdc_client_reconnect(client, app_ctx);
         }else {
-            return -1;
+            return -1;  
         }
     }
     LOGI("connect %s success", client->server_name);
