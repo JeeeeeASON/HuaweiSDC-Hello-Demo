@@ -68,35 +68,50 @@ int sdc_client_connect(struct sdc_client* client, struct app_ctx* app_ctx)
     return nret;
 }
 
-
+/**
+ * [sdc_client_close 关闭对应的客户端，某件事件处理完成。]
+ * @param client  [需要被关闭的客户端]
+ * @param app_ctx [APP运行环境]
+ */
 void sdc_client_close(struct sdc_client* client, struct app_ctx* app_ctx)
 {
-    LOGI("client %s close", client->server_name);
-    if (client->connected) {
+    LOGI("client %s close", client->server_name);   //输出日志：关闭某一客户端。
+    if (client->connected) {    //如果当前客户端connected标志非0，则执行关闭处理，将该标志置零，否则不执行任何操作。
         client->connected = 0;
-        if (client->sdc_ops->close) {
+        if (client->sdc_ops->close) {   //如果当前客户端的操作集中包含close操作，则执行close，否则跳过。
             client->sdc_ops->close(client, app_ctx);
         }
     }
-    app_event_del_close(&client->sdc_event, app_ctx);
+    app_event_del_close(&client->sdc_event, app_ctx);   //关闭客户端代表的事件。
 
-    if (client->reconn_interval) {
+    if (client->reconn_interval) {  //若客户端的重连间隔不为0，则表示代码未进入上一段if，客户端处于重连阶段，正常执行重连操作
         (void)sdc_client_reconnect(client, app_ctx);
     }else {
-        app_timer_del(&client->reconn_timer, app_ctx);
+        app_timer_del(&client->reconn_timer, app_ctx);  //若客户端并非处于重连状态，则正常关闭最后一项服务：计时器。
     }
 }
 
 
+/**
+ * [sdc_client_reconnect 客户端重连函数，在客户端尝试连接失败时调用，主要修改了客户端的重连间隔与计时器。]
+ * @param  client  [执行重连的客户端]
+ * @param  app_ctx [APP运行环境]
+ * @return         [返回计时器添加的结果，或者0值]
+ */
 static int sdc_client_reconnect(struct sdc_client* client, struct app_ctx* app_ctx)
 {
-    app_timer_del(&client->reconn_timer, app_ctx);
-    if (client->reconn_interval) {
+    app_timer_del(&client->reconn_timer, app_ctx);  //清除上一次重连的计时器。
+    if (client->reconn_interval) {  //若客户端的重连间隔非0，即表示客户端尝试重连，则添加一个重连计时器。
         return app_timer_add(&client->reconn_timer, client->reconn_interval, client->reconn_interval, app_ctx);
     }
     return 0;
 }
 
+/**
+ * [sdc_client_try_connect 整个程序中没有调用，看起来像是华为开发人员用于测试客户端连接功能的假人函数]
+ * @param app_timer []
+ * @param app_ctx   [description]
+ */
 static void sdc_client_try_connect(struct app_timer* app_timer, struct app_ctx* app_ctx)
 {
     uint64_t val;

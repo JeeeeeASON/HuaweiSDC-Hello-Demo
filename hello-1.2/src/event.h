@@ -15,7 +15,7 @@ extern "C"{
 #endif 
 
 /**
- * [container_of ]
+ * [container_of 宏函数，]
  */
 #define container_of(addr, type, member) ((type*)((char*)(addr) - offsetof(type, member)))
 
