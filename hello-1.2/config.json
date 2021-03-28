@@ -1,0 +1,30 @@
+{
+    "type": "object", 
+    "properties": {
+        "hello_name": {
+            "type": "string", 
+            "readonly": true
+        }, 
+        "log-server-addr": {
+            "type": "string"
+        },
+        "hello-car-number": {
+            "type": "string", 
+            "maxLength": 32, 
+            "minLength": 0
+        }, 
+        "hello-last-car": {
+            "type": "string", 
+            "readonly": true
+        }, 
+        "hello-count": {
+            "type": "integer", 
+            "readonly": true
+        }, 
+        "hello-all-count": {
+            "type": "string", 
+            "readonly": true
+        }
+    }, 
+    "additionalProperties": false
+}

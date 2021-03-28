@@ -4,13 +4,13 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-APP_EVENT_H	event.h	2;"	d
+APP_EVENT_H	event.h	6;"	d
 APP_EVENT_MAX	main.c	76;"	d	file:
 APP_LOG	log.h	22;"	d
 APP_LOG_H	log.h	2;"	d
-APP_MODULE_H	module.h	3;"	d
-APP_NAME_MAX	module.h	14;"	d
-APP_NULL_MODULE	module.h	55;"	d
+APP_MODULE_H	module.h	5;"	d
+APP_NAME_MAX	module.h	16;"	d
+APP_NULL_MODULE	module.h	62;"	d
 ARCH	Makefile	/^ARCH=aarch64$/;"	m
 ARCH	Makefile	/^ARCH=armv7l$/;"	m
 BINDIR	Makefile	/^BINDIR = $(TOPDIR)\/bin$/;"	m
@@ -52,7 +52,7 @@ OSD_KEY_LASTCAR	meta.c	67;"	d	file:
 SDC_CLIENT_H	sdc_client.h	9;"	d
 SDC_RECONN_DEFAULT	sdc_client.c	19;"	d	file:
 SOURCES	Makefile	/^SOURCES = $(wildcard *.c)$/;"	m
-TIME_UNIT	event.c	57;"	d	file:
+TIME_UNIT	event.c	75;"	d	file:
 TLV_CAR_NUMBER	meta.c	264;"	d	file:
 TLV_NEXT	meta.c	259;"	d	file:
 TOPDIR	Makefile	/^TOPDIR = ..$/;"	m
@@ -101,9 +101,9 @@ config_update	module.h	/^    int (*config_update)(struct app_module* module, str
 config_update_end	main.c	/^static int config_update_end(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
 config_update_param	config.c	/^static void config_update_param(struct module_config_ctx* config_ctx, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
 connected	sdc_client.h	/^    unsigned int connected: 1;$/;"	m	struct:sdc_client
-container_of	event.h	13;"	d
+container_of	event.h	20;"	d
 count	meta.c	/^    uint32_t count;$/;"	m	struct:module_metadata_ctx	file:
-epoll_fd	module.h	/^    int epoll_fd;$/;"	m	struct:app_ctx
+epoll_fd	module.h	/^    int epoll_fd;   \/\/记录epoll文件的描述符$/;"	m	struct:app_ctx
 fd	event.h	/^    int fd;$/;"	m	struct:app_event
 fd	log.c	/^    int fd;$/;"	m	struct:log_ctx	file:
 file	log.c	/^    char file[LOG_FILE_LEN];$/;"	m	struct:log_ctx	file:
@@ -158,13 +158,13 @@ module	osd.c	/^    struct app_module module;$/;"	m	struct:module_osd_ctx	typeref
 module_config_ctx	config.c	/^struct module_config_ctx {$/;"	s	file:
 module_config_init	config.c	/^struct app_module* module_config_init(struct app_ctx* app_ctx)$/;"	f
 module_gateway_init	gateway.c	/^struct app_module* module_gateway_init(struct app_ctx* app_ctx)$/;"	f
-module_list	module.h	/^    struct app_module* module_list;$/;"	m	struct:app_ctx	typeref:struct:app_ctx::app_module
+module_list	module.h	/^    struct app_module* module_list; \/\/记录APP第一个模块的地址，作为一整个APP模块链表的表头。$/;"	m	struct:app_ctx	typeref:struct:app_ctx::app_module
 module_log_init	log.c	/^struct app_module* module_log_init(struct app_ctx* ctx)$/;"	f
 module_metadata_ctx	meta.c	/^struct module_metadata_ctx {$/;"	s	file:
 module_metadata_init	meta.c	/^struct app_module* module_metadata_init(struct app_ctx* app_ctx)$/;"	f
 module_osd_ctx	osd.c	/^struct module_osd_ctx {$/;"	s	file:
 module_osd_init	osd.c	/^struct app_module* module_osd_init(struct app_ctx* app_ctx)$/;"	f
-name	module.h	/^    char name[APP_NAME_MAX];$/;"	m	struct:app_ctx
+name	module.h	/^    char name[APP_NAME_MAX];    \/\/存储APP名称$/;"	m	struct:app_ctx
 name	module.h	/^    const char* name;$/;"	m	struct:app_module
 next	module.h	/^    struct app_module* next;$/;"	m	struct:app_module	typeref:struct:app_module::app_module
 open	sdc_client.h	/^    int (*open)(struct sdc_client* client, struct app_ctx* app_ctx);$/;"	m	struct:sdc_client_operations
@@ -181,7 +181,7 @@ osd_update	osd.c	/^void osd_update(const char* key, const char* value)$/;"	f
 osd_update_uint	osd.c	/^void osd_update_uint(const char* key, uint32_t val)$/;"	f
 pf_app_event_handle	event.h	/^typedef void (*pf_app_event_handle)(struct app_event* event, uint32_t events, struct app_ctx* app_ctx);$/;"	t
 pf_app_timer_handle	event.h	/^typedef void (*pf_app_timer_handle)(struct app_timer* timer, struct app_ctx* app_ctx);$/;"	t
-pf_module_init	module.h	/^typedef struct app_module* (*pf_module_init)(struct app_ctx* ctx);$/;"	t	typeref:struct:pf_module_init
+pf_module_init	module.h	/^typedef struct app_module* (*pf_module_init)(struct app_ctx* ctx);  \/\/声明一个$/;"	t	typeref:struct:pf_module_init
 reconn_interval	sdc_client.h	/^    int reconn_interval;$/;"	m	struct:sdc_client
 reconn_timer	sdc_client.h	/^    struct app_timer reconn_timer;$/;"	m	struct:sdc_client	typeref:struct:sdc_client::app_timer
 sdc_client	sdc_client.h	/^struct sdc_client {$/;"	s

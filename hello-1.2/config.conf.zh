@@ -1,0 +1,6 @@
+hello_name=应用名称
+hello-car-number=特定车牌
+hello-count=特定车牌出现次数
+hello-last-car=最后出现车辆
+hello-all-count=车辆总数
+log-server-addr=日志服务地址<ip:port>

@@ -1,0 +1,492 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+APP_EVENT_H	src/event.h	6;"	d
+APP_EVENT_MAX	src/main.c	76;"	d	file:
+APP_LOG	src/log.h	22;"	d
+APP_LOG_H	src/log.h	2;"	d
+APP_MODULE_H	src/module.h	5;"	d
+APP_NAME_MAX	src/module.h	16;"	d
+APP_NULL_MODULE	src/module.h	62;"	d
+ARCH	src/Makefile	/^ARCH=aarch64$/;"	m
+ARCH	src/Makefile	/^ARCH=armv7l$/;"	m
+BINDIR	src/Makefile	/^BINDIR = $(TOPDIR)\/bin$/;"	m
+CC	src/Makefile	/^CC = aarch64-himix100-linux-gcc$/;"	m
+CC	src/Makefile	/^CC = arm-linux-gnueabi-gcc$/;"	m
+CFLAGS	src/Makefile	/^CFLAGS = -D_XOPEN_SOURCE -D_GNU_SOURCE -Wall -Werror -I..\/include$/;"	m
+CONF_KEY_ADDR	src/log.c	71;"	d	file:
+CONF_KEY_ALL_COUNTER	src/meta.c	59;"	d	file:
+CONF_KEY_APP_NAME	src/gateway.c	46;"	d	file:
+CONF_KEY_CARNUMBER	src/meta.c	56;"	d	file:
+CONF_KEY_COUNTER	src/meta.c	58;"	d	file:
+CONF_KEY_LASTCAR	src/meta.c	57;"	d	file:
+LD	src/Makefile	/^LD = aarch64-himix100-linux-gcc$/;"	m
+LD	src/Makefile	/^LD = arm-linux-gnueabi-gcc$/;"	m
+LDFLAGS	src/Makefile	/^LDFLAGS =$/;"	m
+LIBS	src/Makefile	/^LIBS = $/;"	m
+LOGD	src/log.h	29;"	d
+LOGE	src/log.h	32;"	d
+LOGI	src/log.h	30;"	d
+LOGW	src/log.h	31;"	d
+LOG_ADDR_LEN	src/log.c	15;"	d	file:
+LOG_BUF_LEN	src/log.c	16;"	d	file:
+LOG_FILE_LEN	src/log.c	17;"	d	file:
+MODULE_CONFIG_H	src/config.h	3;"	d
+MODULE_GATEWAY_H	src/gateway.h	3;"	d
+MODULE_METADATA_H	src/meta.h	3;"	d
+MODULE_OSD_H	src/osd.h	3;"	d
+OBJS	src/Makefile	/^OBJS = $(patsubst %.c,%.o,$(SOURCES))$/;"	m
+OSD_DESC_ALL_COUNTER	src/meta.c	64;"	d	file:
+OSD_DESC_CARNUMBER	src/meta.c	61;"	d	file:
+OSD_DESC_COUNTER	src/meta.c	63;"	d	file:
+OSD_DESC_LASTCAR	src/meta.c	62;"	d	file:
+OSD_KEY_ALL_COUNTER	src/meta.c	69;"	d	file:
+OSD_KEY_APP_DESC	src/gateway.c	48;"	d	file:
+OSD_KEY_APP_NAME	src/gateway.c	47;"	d	file:
+OSD_KEY_CARNUMBER	src/meta.c	66;"	d	file:
+OSD_KEY_COUNTER	src/meta.c	68;"	d	file:
+OSD_KEY_LASTCAR	src/meta.c	67;"	d	file:
+PAAS_TPROXY_SERVER	include/sdc_tproxy_paas.h	10;"	d
+PAGE_SIZE	include/sdc_shm.h	42;"	d
+SDC_ALARM_H	include/sdc_alarm_paas.h	3;"	d
+SDC_APPMGR_PAAS_H	include/sdc_appmgr_paas.h	3;"	d
+SDC_BGR888	include/sdc_codec_iaas.h	55;"	d
+SDC_BUFF_GETMSGSIZE	include/sdc_ioctl.h	25;"	d
+SDC_BUFF_GETRDSIZE	include/sdc_ioctl.h	24;"	d
+SDC_BUFF_GETWRSIZE	include/sdc_ioctl.h	23;"	d
+SDC_BUFF_SETRDSIZE	include/sdc_ioctl.h	21;"	d
+SDC_BUFF_SETWRSIZE	include/sdc_ioctl.h	20;"	d
+SDC_CACHE_ALLOC	include/sdc_shm.h	30;"	d
+SDC_CACHE_FREE	include/sdc_shm.h	39;"	d
+SDC_CACHE_MMAP	include/sdc_shm.h	36;"	d
+SDC_CLIENT_H	src/sdc_client.h	9;"	d
+SDC_CODEC_IAAS_H	include/sdc_codec_iaas.h	3;"	d
+SDC_CODE_200	include/sdc_common.h	21;"	d
+SDC_CODE_400	include/sdc_common.h	22;"	d
+SDC_CODE_401	include/sdc_common.h	23;"	d
+SDC_CODE_403	include/sdc_common.h	24;"	d
+SDC_CODE_500	include/sdc_common.h	25;"	d
+SDC_COMMON_H	include/sdc_common.h	3;"	d
+SDC_CONFIG_H	include/sdc_config_paas.h	3;"	d
+SDC_EVENT_PAAS_H	include/sdc_event_paas.h	3;"	d
+SDC_FT_BUFFER	include/sdc_ioctl.h	14;"	d
+SDC_FT_CACHE	include/sdc_shm.h	27;"	d
+SDC_GATEWAY_PAAS_H	include/sdc_gateway_paas.h	3;"	d
+SDC_H	include/sdc.h	3;"	d
+SDC_HEAD_COMBINED_CONTENT_TYPE	include/sdc_codec_iaas.h	68;"	d
+SDC_HEAD_COMBINED_JPEG_QF	include/sdc_codec_iaas.h	69;"	d
+SDC_HEAD_COMBINED_OSD	include/sdc_codec_iaas.h	70;"	d
+SDC_HEAD_CONTENT_TYPE	include/sdc_common.h	86;"	d
+SDC_HEAD_DECODED_YUV_ACCEPT_TYPE	include/sdc_codec_iaas.h	53;"	d
+SDC_HEAD_HOST	include/sdc_common.h	88;"	d
+SDC_HEAD_MMZ_CACHED	include/sdc_utils_iaas.h	24;"	d
+SDC_HEAD_SHM_CACHED_EVENT	include/sdc_event_paas.h	17;"	d
+SDC_HEAD_TRANSFER_COPY	include/sdc_common.h	79;"	d
+SDC_HEAD_TRANSFER_ENCODING	include/sdc_common.h	78;"	d
+SDC_HEAD_TRANSFER_ZCOPY	include/sdc_common.h	80;"	d
+SDC_HEAD_USER_AGENT	include/sdc_common.h	89;"	d
+SDC_HEAD_VENC_CACHED_COUNT	include/sdc_video_iaas.h	88;"	d
+SDC_HEAD_VENC_CACHED_COUNT_MAX	include/sdc_video_iaas.h	87;"	d
+SDC_HEAD_YUV_CACHED_COUNT	include/sdc_video_iaas.h	54;"	d
+SDC_HEAD_YUV_CACHED_COUNT_MAX	include/sdc_video_iaas.h	51;"	d
+SDC_HEAD_YUV_PARAM_MASK	include/sdc_video_iaas.h	52;"	d
+SDC_HEAD_YUV_PARAM_SNAP	include/sdc_video_iaas.h	55;"	d
+SDC_HEAD_YUV_SYNC	include/sdc_video_iaas.h	50;"	d
+SDC_IOCTL_H	include/sdc_ioctl.h	3;"	d
+SDC_METHOD_CREATE	include/sdc_common.h	16;"	d
+SDC_METHOD_DELETE	include/sdc_common.h	19;"	d
+SDC_METHOD_GET	include/sdc_common.h	17;"	d
+SDC_METHOD_UPDATE	include/sdc_common.h	18;"	d
+SDC_MMZ_ALLOC	include/sdc_shm.h	33;"	d
+SDC_OSD_H	include/sdc_osd_iaas.h	3;"	d
+SDC_OSD_LANG_EN	include/sdc_osd_iaas.h	23;"	d
+SDC_OSD_LANG_ES	include/sdc_osd_iaas.h	24;"	d
+SDC_OSD_LANG_FR	include/sdc_osd_iaas.h	25;"	d
+SDC_OSD_LANG_ZH	include/sdc_osd_iaas.h	22;"	d
+SDC_RECONN_DEFAULT	src/sdc_client.c	19;"	d	file:
+SDC_RGB888	include/sdc_codec_iaas.h	56;"	d
+SDC_SHM_CACHE_DEV	include/sdc_shm.h	17;"	d
+SDC_SHM_H	include/sdc_shm.h	3;"	d
+SDC_TPROXY_PAAS_H	include/sdc_tproxy_paas.h	2;"	d
+SDC_URL_ALARM	include/sdc_alarm_paas.h	14;"	d
+SDC_URL_ALARM_SOURCE	include/sdc_alarm_paas.h	12;"	d
+SDC_URL_APP_WATCHDOG	include/sdc_appmgr_paas.h	15;"	d
+SDC_URL_COMBINED_IMAGE	include/sdc_codec_iaas.h	67;"	d
+SDC_URL_CONFIG_APP	include/sdc_config_paas.h	11;"	d
+SDC_URL_CONFIG_PARAM	include/sdc_config_paas.h	16;"	d
+SDC_URL_DECODED_YUV	include/sdc_codec_iaas.h	51;"	d
+SDC_URL_ENCODED_JPEG	include/sdc_codec_iaas.h	16;"	d
+SDC_URL_HARDWARE_ID	include/sdc_utils_iaas.h	15;"	d
+SDC_URL_MMZ	include/sdc_utils_iaas.h	22;"	d
+SDC_URL_OSD_BOX_HEIGHT	include/sdc_codec_iaas.h	59;"	d
+SDC_URL_OSD_ENV_DESC	include/sdc_osd_iaas.h	20;"	d
+SDC_URL_OSD_ENV_NAME	include/sdc_osd_iaas.h	14;"	d
+SDC_URL_OSD_ENV_VALUE	include/sdc_osd_iaas.h	33;"	d
+SDC_URL_PAAS_EVENTD_EVENT	include/sdc_event_paas.h	16;"	d
+SDC_URL_PAAS_EVENTD_PUBLISH_STAT	include/sdc_event_paas.h	53;"	d
+SDC_URL_PAAS_EVENTD_SUBSCRIBE_STAT	include/sdc_event_paas.h	44;"	d
+SDC_URL_PAAS_GATEWAY_CONF	include/sdc_gateway_paas.h	15;"	d
+SDC_URL_RED_LIGHT_ENHANCED	include/sdc_video_iaas.h	124;"	d
+SDC_URL_TPROXY_CONNECTION	include/sdc_tproxy_paas.h	27;"	d
+SDC_URL_TPROXY_SERVER	include/sdc_tproxy_paas.h	12;"	d
+SDC_URL_VENC_DATA	include/sdc_video_iaas.h	85;"	d
+SDC_URL_YUV_CHANNEL	include/sdc_video_iaas.h	19;"	d
+SDC_URL_YUV_DATA	include/sdc_video_iaas.h	48;"	d
+SDC_URL_YUV_SNAP	include/sdc_video_iaas.h	115;"	d
+SDC_UTILS_H	include/sdc_utils_iaas.h	3;"	d
+SDC_VERSION	include/sdc_common.h	14;"	d
+SDC_VIDEO_IAAS_H	include/sdc_video_iaas.h	3;"	d
+SDC_YVU_420SP	include/sdc_video_iaas.h	21;"	d
+SOURCES	src/Makefile	/^SOURCES = $(wildcard *.c)$/;"	m
+TIME_UNIT	src/event.c	75;"	d	file:
+TLV_CAR_NUMBER	src/meta.c	264;"	d	file:
+TLV_NEXT	src/meta.c	259;"	d	file:
+TOPDIR	src/Makefile	/^TOPDIR = ..$/;"	m
+_uint64ptr	include/sdc_common.h	/^typedef union _uint64ptr$/;"	u
+addr	include/sdc_tproxy_paas.h	/^    char addr[128];$/;"	m	struct:sdc_tproxy_connection
+addr	include/sdc_tproxy_paas.h	/^    char addr[128];$/;"	m	struct:sdc_tproxy_server
+addr	src/log.c	/^    char addr[LOG_ADDR_LEN];$/;"	m	struct:log_ctx	file:
+addr_phy	include/sdc_codec_iaas.h	/^	uint64_t addr_phy;$/;"	m	struct:sdc_jpeg_frame
+addr_phy	include/sdc_event_paas.h	/^	uint64_t addr_phy;$/;"	m	struct:paas_shm_cached_event
+addr_phy	include/sdc_shm.h	/^    unsigned long addr_phy;$/;"	m	struct:sdc_shm_cache
+addr_phy	include/sdc_utils_iaas.h	/^	uint64_t addr_phy;$/;"	m	struct:sdc_mmz
+addr_phy	include/sdc_video_iaas.h	/^	uint64_t addr_phy;$/;"	m	struct:sdc_venc_frame
+addr_phy	include/sdc_video_iaas.h	/^	uint64_t addr_phy;$/;"	m	struct:sdc_yuv_frame
+addr_virt	include/sdc_codec_iaas.h	/^	uint64_t addr_virt;$/;"	m	struct:sdc_jpeg_frame
+addr_virt	include/sdc_shm.h	/^    void* addr_virt;$/;"	m	struct:sdc_shm_cache
+addr_virt	include/sdc_utils_iaas.h	/^	uint64_t addr_virt;$/;"	m	struct:sdc_mmz
+addr_virt	include/sdc_video_iaas.h	/^	uint64_t addr_virt;$/;"	m	struct:sdc_venc_frame
+addr_virt	include/sdc_video_iaas.h	/^	uint64_t addr_virt;$/;"	m	struct:sdc_yuv_frame
+all_count	src/meta.c	/^    uint32_t all_count;$/;"	m	struct:module_metadata_ctx	file:
+app	src/module.h	/^    struct app_ctx* app;$/;"	m	struct:app_module	typeref:struct:app_module::app_ctx
+app_ctx	src/module.h	/^struct app_ctx {$/;"	s
+app_ctx_init	src/main.c	/^static void app_ctx_init(struct app_ctx* app_ctx, int epoll_fd)$/;"	f	file:
+app_event	src/event.h	/^struct app_event {$/;"	s
+app_event_add	src/event.c	/^int app_event_add(struct app_event* event, uint32_t events, struct app_ctx* app_ctx)$/;"	f
+app_event_del	src/event.c	/^void app_event_del(struct app_event* event, struct app_ctx* app_ctx)$/;"	f
+app_event_del_close	src/event.c	/^void app_event_del_close(struct app_event* event, struct app_ctx* app_ctx)$/;"	f
+app_event_init	src/event.c	/^void app_event_init(struct app_event* app_event, int fd, pf_app_event_handle handle)$/;"	f
+app_event_mod	src/event.c	/^int app_event_mod(struct app_event* event, uint32_t events, struct app_ctx* app_ctx)$/;"	f
+app_event_run	src/main.c	/^static int app_event_run(struct app_ctx* app_ctx)$/;"	f	file:
+app_gateway_connect	src/gateway.c	/^static int app_gateway_connect(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+app_gateway_response	src/gateway.c	/^static void app_gateway_response(struct sdc_client* client, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
+app_gettid	src/log.h	18;"	d
+app_log	src/log.c	/^void app_log(int leve, const char* format, ...)$/;"	f
+app_module	src/module.h	/^struct app_module {$/;"	s
+app_timer	src/event.h	/^struct app_timer {$/;"	s
+app_timer_add	src/event.c	/^int app_timer_add(struct app_timer* timer, uint32_t timeout, uint32_t interval, struct app_ctx* app_ctx)$/;"	f
+app_timer_del	src/event.c	/^void app_timer_del(struct app_timer* timer, struct app_ctx* app_ctx)$/;"	f
+app_timer_handle	src/event.c	/^static void app_timer_handle(struct app_event* app_event, uint32_t events, struct app_ctx* app_ctx)$/;"	f	file:
+app_timer_init	src/event.c	/^void app_timer_init(struct app_timer* timer, pf_app_timer_handle handle)$/;"	f
+appdog_op_req	include/sdc_appmgr_paas.h	/^struct appdog_op_req{$/;"	s
+base	src/config.c	/^    struct sdc_client base;$/;"	m	struct:module_config_ctx	typeref:struct:module_config_ctx::sdc_client	file:
+base	src/event.h	/^    struct app_event base;$/;"	m	struct:app_timer	typeref:struct:app_timer::app_event
+base	src/gateway.c	/^    struct sdc_client base;$/;"	m	struct:gateway_ctx	typeref:struct:gateway_ctx::sdc_client	file:
+base	src/log.c	/^    struct sdc_client base;$/;"	m	struct:log_ctx	typeref:struct:log_ctx::sdc_client	file:
+base	src/meta.c	/^    struct sdc_client base;$/;"	m	struct:module_metadata_ctx	typeref:struct:module_metadata_ctx::sdc_client	file:
+base	src/osd.c	/^    struct sdc_client base;$/;"	m	struct:module_osd_ctx	typeref:struct:module_osd_ctx::sdc_client	file:
+buf	src/log.c	/^    char buf[LOG_BUF_LEN];$/;"	m	struct:log_ctx	file:
+car_number	src/meta.c	/^    char car_number[32];$/;"	m	struct:module_metadata_ctx	file:
+channel	include/sdc_video_iaas.h	/^	uint32_t channel;$/;"	m	struct:sdc_chan_query
+channel	include/sdc_video_iaas.h	/^	uint32_t channel;$/;"	m	struct:sdc_venc_data
+channel	include/sdc_video_iaas.h	/^	uint32_t channel;$/;"	m	struct:sdc_yuv_channel_param
+channel	include/sdc_video_iaas.h	/^	uint32_t channel;$/;"	m	struct:sdc_yuv_data
+close	src/sdc_client.h	/^    void (*close)(struct sdc_client* client, struct app_ctx* app_ctx);$/;"	m	struct:sdc_client_operations
+cnt	include/sdc_config_paas.h	/^    uint32_t cnt;$/;"	m	struct:sdc_config_param_list
+cnt	include/sdc_event_paas.h	/^        uint64_t cnt;$/;"	m	struct:paas_event_publish_stat
+cnt	include/sdc_event_paas.h	/^        uint64_t cnt;$/;"	m	struct:paas_event_subscribe_stat
+code	include/sdc_common.h	/^        uint16_t        code;$/;"	m	struct:sdc_common_head
+combined_region	include/sdc_codec_iaas.h	/^	struct sdc_region combined_region;$/;"	m	struct:sdc_combined_yuv	typeref:struct:sdc_combined_yuv::sdc_region
+config_close	src/config.c	/^static void config_close(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+config_get	src/module.h	/^    int (*config_get)(struct app_module* module, struct sdc_config_param* params, int cnt);$/;"	m	struct:app_module
+config_get_end	src/main.c	/^static int config_get_end(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+config_get_param	src/config.c	/^static void config_get_param(struct module_config_ctx* config_ctx, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
+config_handle_error	src/config.c	/^static void config_handle_error(struct sdc_client* client, int err, struct app_ctx* app_ctx)$/;"	f	file:
+config_handle_request	src/config.c	/^static void config_handle_request(struct sdc_client* client, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
+config_handle_response	src/config.c	/^static void config_handle_response(struct sdc_client* client, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
+config_open	src/config.c	/^static int config_open(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+config_simple_get	src/main.c	/^int config_simple_get(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f
+config_simple_update	src/main.c	/^int config_simple_update(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f
+config_update	src/module.h	/^    int (*config_update)(struct app_module* module, struct sdc_config_param* params, int cnt);$/;"	m	struct:app_module
+config_update_end	src/main.c	/^static int config_update_end(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+config_update_param	src/config.c	/^static void config_update_param(struct module_config_ctx* config_ctx, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
+connected	src/sdc_client.h	/^    unsigned int connected: 1;$/;"	m	struct:sdc_client
+container_of	src/event.h	20;"	d
+content	include/sdc_codec_iaas.h	/^	uint8_t content[2048];$/;"	m	struct:sdc_osd
+content_len	include/sdc_codec_iaas.h	/^	uint32_t content_len;$/;"	m	struct:sdc_osd
+content_length	include/sdc_common.h	/^        uint32_t        content_length;$/;"	m	struct:sdc_common_head
+cookie	include/sdc_codec_iaas.h	/^	uint32_t cookie[4];$/;"	m	struct:sdc_jpeg_frame
+cookie	include/sdc_event_paas.h	/^	uint32_t cookie;$/;"	m	struct:paas_shm_cached_event
+cookie	include/sdc_shm.h	/^    unsigned int cookie;$/;"	m	struct:sdc_shm_cache
+cookie	include/sdc_utils_iaas.h	/^	uint32_t cookie[4];$/;"	m	struct:sdc_mmz
+cookie	include/sdc_video_iaas.h	/^	uint32_t cookie[4];$/;"	m	struct:sdc_yuv_frame
+cookie	include/sdc_video_iaas.h	/^	uint64_t cookie[8];$/;"	m	struct:sdc_venc_frame
+count	src/meta.c	/^    uint32_t count;$/;"	m	struct:module_metadata_ctx	file:
+data	include/sdc_alarm_paas.h	/^    char data[0];$/;"	m	struct:sdc_alarm
+data	include/sdc_event_paas.h	/^        char data[0];$/;"	m	struct:paas_event
+desc	include/sdc_osd_iaas.h	/^    char desc[128];$/;"	m	struct:sdc_osd_env_desc
+domain	include/sdc_tproxy_paas.h	/^    int domain;$/;"	m	struct:sdc_tproxy_connection
+domain	include/sdc_tproxy_paas.h	/^    int domain;$/;"	m	struct:sdc_tproxy_server
+epoll_fd	src/module.h	/^    int epoll_fd;   \/\/记录epoll文件的描述符$/;"	m	struct:app_ctx
+event_paas_name	include/sdc_event_paas.h	14;"	d
+fail_cnt	include/sdc_event_paas.h	/^        uint64_t fail_cnt; \/\/转发失败的次数$/;"	m	struct:paas_event_publish_stat
+fail_cnt	include/sdc_event_paas.h	/^        uint64_t fail_cnt;$/;"	m	struct:paas_event_subscribe_stat
+fd	src/event.h	/^    int fd;$/;"	m	struct:app_event
+fd	src/log.c	/^    int fd;$/;"	m	struct:log_ctx	file:
+file	src/log.c	/^    char file[LOG_FILE_LEN];$/;"	m	struct:log_ctx	file:
+filter	include/sdc_event_paas.h	/^        char filter[256];$/;"	m	struct:paas_event_filter
+filter	include/sdc_tproxy_paas.h	/^    char filter[0];$/;"	m	struct:sdc_tproxy_server
+format	include/sdc_codec_iaas.h	/^	uint8_t format[128];$/;"	m	struct:sdc_osd
+format	include/sdc_video_iaas.h	/^	uint32_t format; \/\/ YUV_420SP 当前发的临时版本没有这个字段，正式版本补充进去$/;"	m	struct:sdc_yuv_channel_param
+format	include/sdc_video_iaas.h	/^	uint32_t format; \/\/ YUV_420SP$/;"	m	struct:sdc_yuv_frame
+format	include/sdc_video_iaas.h	/^	uint32_t format;$/;"	m	struct:sdc_venc_frame
+fps	include/sdc_video_iaas.h	/^	uint32_t fps;$/;"	m	struct:sdc_yuv_channel_param
+frame	include/sdc_codec_iaas.h	/^	struct sdc_yuv_frame frame;	$/;"	m	struct:sdc_combined_yuv	typeref:struct:sdc_combined_yuv::sdc_yuv_frame
+frame	include/sdc_codec_iaas.h	/^	struct sdc_yuv_frame frame;$/;"	m	struct:sdc_encode_jpeg_param	typeref:struct:sdc_encode_jpeg_param::sdc_yuv_frame
+frame	include/sdc_video_iaas.h	/^	struct sdc_venc_frame frame;$/;"	m	struct:sdc_venc_data	typeref:struct:sdc_venc_data::sdc_venc_frame
+frame	include/sdc_video_iaas.h	/^	struct sdc_yuv_frame frame;$/;"	m	struct:sdc_yuv_data	typeref:struct:sdc_yuv_data::sdc_yuv_frame
+frame_type	include/sdc_video_iaas.h	/^	uint32_t frame_type;$/;"	m	struct:sdc_venc_frame
+g_app_log_level	src/log.c	/^int g_app_log_level = LOG_DEBUG;$/;"	v
+g_config_ctx	src/config.c	/^static struct module_config_ctx g_config_ctx = {$/;"	v	typeref:struct:module_config_ctx	file:
+g_config_ops	src/config.c	/^static const struct sdc_client_operations g_config_ops = {$/;"	v	typeref:struct:sdc_client_operations	file:
+g_gateway_ctx	src/gateway.c	/^static struct gateway_ctx g_gateway_ctx = {$/;"	v	typeref:struct:gateway_ctx	file:
+g_gateway_ops	src/gateway.c	/^static const struct sdc_client_operations g_gateway_ops = {$/;"	v	typeref:struct:sdc_client_operations	file:
+g_gateway_ops	src/gateway.c	/^static const struct sdc_client_operations g_gateway_ops;$/;"	v	typeref:struct:sdc_client_operations	file:
+g_log_ctx	src/log.c	/^static struct log_ctx g_log_ctx = {$/;"	v	typeref:struct:log_ctx	file:
+g_log_ops	src/log.c	/^static const struct sdc_client_operations g_log_ops = {$/;"	v	typeref:struct:sdc_client_operations	file:
+g_metadata_ctx	src/meta.c	/^static struct module_metadata_ctx g_metadata_ctx = {$/;"	v	typeref:struct:module_metadata_ctx	file:
+g_metadata_ops	src/meta.c	/^static const struct sdc_client_operations g_metadata_ops = {$/;"	v	typeref:struct:sdc_client_operations	file:
+g_metadata_ops	src/meta.c	/^static const struct sdc_client_operations g_metadata_ops;$/;"	v	typeref:struct:sdc_client_operations	file:
+g_module_end	src/main.c	/^static struct app_module g_module_end ;$/;"	v	typeref:struct:app_module	file:
+g_module_end	src/main.c	/^static struct app_module g_module_end = {$/;"	v	typeref:struct:app_module	file:
+g_modules	src/main.c	/^static const pf_module_init g_modules[] = {$/;"	v	file:
+g_null_ops	src/sdc_client.c	/^static const struct sdc_client_operations g_null_ops = {};$/;"	v	typeref:struct:sdc_client_operations	file:
+g_osd_ctx	src/osd.c	/^static struct module_osd_ctx g_osd_ctx = {$/;"	v	typeref:struct:module_osd_ctx	file:
+g_osd_ops	src/osd.c	/^static const struct sdc_client_operations g_osd_ops = {$/;"	v	typeref:struct:sdc_client_operations	file:
+gateway_config_get	src/gateway.c	/^static int gateway_config_get(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+gateway_config_update	src/gateway.c	/^static int gateway_config_update(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+gateway_ctx	src/gateway.c	/^struct gateway_ctx {$/;"	s	file:
+gateway_osd_connect	src/gateway.c	/^static void gateway_osd_connect(struct app_module* module)$/;"	f	file:
+h	include/sdc_video_iaas.h	/^	uint32_t h;$/;"	m	struct:sdc_region
+handle	src/event.h	/^    pf_app_event_handle handle;$/;"	m	struct:app_event
+handle	src/event.h	/^    pf_app_timer_handle handle;$/;"	m	struct:app_timer
+handle_error	src/sdc_client.h	/^    void (*handle_error)(struct sdc_client* client, int errno, struct app_ctx* app_ctx);$/;"	m	struct:sdc_client_operations
+handle_request	src/sdc_client.h	/^    void (*handle_request)(struct sdc_client* client, struct sdc_common_head* head, struct app_ctx* app_ctx);$/;"	m	struct:sdc_client_operations
+handle_response	src/sdc_client.h	/^    void (*handle_response)(struct sdc_client* client, struct sdc_common_head* head, struct app_ctx* app_ctx);$/;"	m	struct:sdc_client_operations
+head_length	include/sdc_common.h	/^        uint16_t        head_length;$/;"	m	struct:sdc_common_head
+height	include/sdc_codec_iaas.h	/^	uint32_t height;$/;"	m	struct:sdc_combined_yuv_param
+height	include/sdc_video_iaas.h	/^	uint32_t height;$/;"	m	struct:sdc_resolution
+height	include/sdc_video_iaas.h	/^	uint32_t height;$/;"	m	struct:sdc_venc_frame
+height	include/sdc_video_iaas.h	/^	uint32_t height;$/;"	m	struct:sdc_yuv_channel_param
+height	include/sdc_video_iaas.h	/^	uint32_t height;$/;"	m	struct:sdc_yuv_frame
+id	include/sdc_event_paas.h	/^        uint32_t id;        \/\/建议同IP地址一样管理，不同前缀对应事件分类，方便分类订阅。$/;"	m	struct:paas_event
+id	include/sdc_utils_iaas.h	/^	char id[33];$/;"	m	struct:sdc_hardware_id
+id	include/sdc_video_iaas.h	/^	uint32_t id;$/;"	m	struct:sdc_yuv_snap_param
+interval	src/event.h	/^    int interval;$/;"	m	struct:app_timer
+interval_msec	include/sdc_video_iaas.h	/^	uint32_t interval_msec;$/;"	m	struct:sdc_yuv_snap_param
+is_snap_channel	include/sdc_video_iaas.h	/^	uint32_t is_snap_channel;$/;"	m	struct:sdc_yuv_channel_info
+key	include/sdc_config_paas.h	/^    char* key;$/;"	m	struct:sdc_config_param
+lang	include/sdc_osd_iaas.h	/^    uint32_t lang;$/;"	m	struct:sdc_osd_env_desc
+last_car	src/meta.c	/^    char last_car[64];$/;"	m	struct:module_metadata_ctx	file:
+len	src/meta.c	/^    uint32_t len;$/;"	m	struct:tlv	file:
+length	include/sdc_common.h	/^        uint16_t length;$/;"	m	struct:sdc_extend_head
+length	include/sdc_event_paas.h	/^        uint32_t length;   \/\/事件内容的长度.$/;"	m	struct:paas_event
+level	include/sdc_video_iaas.h	/^	uint32_t level;$/;"	m	struct:sdc_red_light_enhanced_param
+log_config_get	src/log.c	/^static int log_config_get(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+log_config_update	src/log.c	/^static int log_config_update(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+log_connect	src/log.c	/^static void log_connect(struct log_ctx* log_ctx)$/;"	f	file:
+log_ctx	src/log.c	/^struct log_ctx {$/;"	s	file:
+log_on_connect	src/log.c	/^static int log_on_connect(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+main	src/main.c	/^int main(int argc, char* argv[])$/;"	f
+max_resolution	include/sdc_video_iaas.h	/^	struct sdc_resolution max_resolution;$/;"	m	struct:sdc_yuv_channel_info	typeref:struct:sdc_yuv_channel_info::sdc_resolution
+meta_config_get	src/meta.c	/^static int meta_config_get(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+meta_config_update	src/meta.c	/^static int meta_config_update(struct app_module* module, struct sdc_config_param* params, int cnt)$/;"	f	file:
+meta_osd_connect	src/meta.c	/^static void meta_osd_connect(struct app_module* module)$/;"	f	file:
+metadata_close	src/meta.c	/^static void metadata_close(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+metadata_connect	src/meta.c	/^static int metadata_connect(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+metadata_handle_error	src/meta.c	/^static void metadata_handle_error(struct sdc_client* client, int err, struct app_ctx* app_ctx)$/;"	f	file:
+metadata_handle_response	src/meta.c	/^static void metadata_handle_response(struct sdc_client* client, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
+metadata_process	src/meta.c	/^static void metadata_process(struct sdc_client* client, struct paas_event* paas_event, uint32_t len, struct app_ctx* app_ctx)$/;"	f	file:
+method	include/sdc_common.h	/^        uint8_t         method: 7;$/;"	m	struct:sdc_common_head
+module	src/config.c	/^    struct app_module module;$/;"	m	struct:module_config_ctx	typeref:struct:module_config_ctx::app_module	file:
+module	src/gateway.c	/^    struct app_module module;$/;"	m	struct:gateway_ctx	typeref:struct:gateway_ctx::app_module	file:
+module	src/log.c	/^    struct app_module module;$/;"	m	struct:log_ctx	typeref:struct:log_ctx::app_module	file:
+module	src/meta.c	/^    struct app_module module;$/;"	m	struct:module_metadata_ctx	typeref:struct:module_metadata_ctx::app_module	file:
+module	src/osd.c	/^    struct app_module module;$/;"	m	struct:module_osd_ctx	typeref:struct:module_osd_ctx::app_module	file:
+module_config_ctx	src/config.c	/^struct module_config_ctx {$/;"	s	file:
+module_config_init	src/config.c	/^struct app_module* module_config_init(struct app_ctx* app_ctx)$/;"	f
+module_gateway_init	src/gateway.c	/^struct app_module* module_gateway_init(struct app_ctx* app_ctx)$/;"	f
+module_list	src/module.h	/^    struct app_module* module_list; \/\/记录APP第一个模块的地址，作为一整个APP模块链表的表头。$/;"	m	struct:app_ctx	typeref:struct:app_ctx::app_module
+module_log_init	src/log.c	/^struct app_module* module_log_init(struct app_ctx* ctx)$/;"	f
+module_metadata_ctx	src/meta.c	/^struct module_metadata_ctx {$/;"	s	file:
+module_metadata_init	src/meta.c	/^struct app_module* module_metadata_init(struct app_ctx* app_ctx)$/;"	f
+module_osd_ctx	src/osd.c	/^struct module_osd_ctx {$/;"	s	file:
+module_osd_init	src/osd.c	/^struct app_module* module_osd_init(struct app_ctx* app_ctx)$/;"	f
+name	include/sdc_alarm_paas.h	/^    char name[64];$/;"	m	struct:sdc_alarm
+name	include/sdc_event_paas.h	/^        char name[16];      \/\/事件唯一标识，建议同域名定义避免冲突$/;"	m	struct:paas_event
+name	include/sdc_event_paas.h	/^        char name[16];$/;"	m	struct:paas_event_filter
+name	include/sdc_event_paas.h	/^        char name[16];$/;"	m	struct:paas_event_publish_stat
+name	include/sdc_event_paas.h	/^        char name[16];$/;"	m	struct:paas_event_subscribe_stat
+name	include/sdc_osd_iaas.h	/^    char name[128];$/;"	m	struct:sdc_osd_env_desc
+name	include/sdc_osd_iaas.h	/^    char name[128];$/;"	m	struct:sdc_osd_env_name
+name	include/sdc_osd_iaas.h	/^    char name[128];$/;"	m	struct:sdc_osd_env_value
+name	src/module.h	/^    char name[APP_NAME_MAX];    \/\/存储APP名称$/;"	m	struct:app_ctx
+name	src/module.h	/^    const char* name;$/;"	m	struct:app_module
+next	src/module.h	/^    struct app_module* next;$/;"	m	struct:app_module	typeref:struct:app_module::app_module
+num	include/sdc_video_iaas.h	/^	uint32_t num;$/;"	m	struct:sdc_red_light_enhanced_param
+num	include/sdc_video_iaas.h	/^	uint32_t num;$/;"	m	struct:sdc_yuv_snap_param
+on_off	include/sdc_video_iaas.h	/^	uint32_t on_off;$/;"	m	struct:sdc_yuv_channel_param
+open	src/sdc_client.h	/^    int (*open)(struct sdc_client* client, struct app_ctx* app_ctx);$/;"	m	struct:sdc_client_operations
+origin_region	include/sdc_codec_iaas.h	/^	struct sdc_region origin_region;$/;"	m	struct:sdc_combined_yuv	typeref:struct:sdc_combined_yuv::sdc_region
+osd	include/sdc_codec_iaas.h	/^	struct sdc_osd osd;$/;"	m	struct:sdc_osd_box	typeref:struct:sdc_osd_box::sdc_osd
+osd	include/sdc_codec_iaas.h	/^	struct sdc_osd osd;$/;"	m	struct:sdc_osd_region	typeref:struct:sdc_osd_region::sdc_osd
+osd_close	src/osd.c	/^static void osd_close(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+osd_connect	src/module.h	/^    void (*osd_connect)(struct app_module* module);$/;"	m	struct:app_module
+osd_connect	src/osd.c	/^static int osd_connect(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+osd_connect_end	src/main.c	/^static void osd_connect_end(struct app_module* module)$/;"	f	file:
+osd_desc_register	src/osd.c	/^void osd_desc_register(const char* key, const char* desc, uint32_t lang)$/;"	f
+osd_handle_error	src/osd.c	/^static void osd_handle_error(struct sdc_client* client, int err, struct app_ctx* app_ctx)$/;"	f	file:
+osd_handle_response	src/osd.c	/^static void osd_handle_response(struct sdc_client* client, struct sdc_common_head* head, struct app_ctx* app_ctx)$/;"	f	file:
+osd_name_register	src/osd.c	/^void osd_name_register(const char* key)$/;"	f
+osd_region	include/sdc_codec_iaas.h	/^	struct sdc_osd_region osd_region[0];$/;"	m	struct:sdc_encode_jpeg_param	typeref:struct:sdc_encode_jpeg_param::sdc_osd_region
+osd_region_cnt	include/sdc_codec_iaas.h	/^	uint16_t osd_region_cnt;$/;"	m	struct:sdc_encode_jpeg_param
+osd_simple_connect	src/main.c	/^void osd_simple_connect(struct app_module* module)$/;"	f
+osd_update	src/osd.c	/^void osd_update(const char* key, const char* value)$/;"	f
+osd_update_uint	src/osd.c	/^void osd_update_uint(const char* key, uint32_t val)$/;"	f
+paas_event	include/sdc_event_paas.h	/^struct paas_event$/;"	s
+paas_event_filter	include/sdc_event_paas.h	/^struct paas_event_filter$/;"	s
+paas_event_publish_stat	include/sdc_event_paas.h	/^struct paas_event_publish_stat$/;"	s
+paas_event_subscribe_stat	include/sdc_event_paas.h	/^struct paas_event_subscribe_stat$/;"	s
+paas_gateway_conf	include/sdc_gateway_paas.h	/^struct paas_gateway_conf {$/;"	s
+paas_shm_cached_event	include/sdc_event_paas.h	/^struct paas_shm_cached_event$/;"	s
+param	include/sdc_video_iaas.h	/^	struct sdc_yuv_channel_param param;$/;"	m	struct:sdc_yuv_channel_info	typeref:struct:sdc_yuv_channel_info::sdc_yuv_channel_param
+params	include/sdc_config_paas.h	/^    struct sdc_config_param* params;$/;"	m	struct:sdc_config_param_list	typeref:struct:sdc_config_param_list::sdc_config_param
+path	include/sdc_gateway_paas.h	/^    char path[256];$/;"	m	struct:paas_gateway_conf
+pchar	include/sdc_common.h	/^    char* pchar;$/;"	m	union:_uint64ptr
+pf_app_event_handle	src/event.h	/^typedef void (*pf_app_event_handle)(struct app_event* event, uint32_t events, struct app_ctx* app_ctx);$/;"	t
+pf_app_timer_handle	src/event.h	/^typedef void (*pf_app_timer_handle)(struct app_timer* timer, struct app_ctx* app_ctx);$/;"	t
+pf_module_init	src/module.h	/^typedef struct app_module* (*pf_module_init)(struct app_ctx* ctx);  \/\/声明一个$/;"	t	typeref:struct:pf_module_init
+pts	include/sdc_video_iaas.h	/^	uint64_t pts;$/;"	m	struct:sdc_yuv_data
+pts_sys	include/sdc_video_iaas.h	/^	uint64_t pts_sys;$/;"	m	struct:sdc_venc_data
+pts_sys	include/sdc_video_iaas.h	/^	uint64_t pts_sys;$/;"	m	struct:sdc_yuv_data
+publisher	include/sdc_event_paas.h	/^        char publisher[16];   \/\/发送事件的服务标识，调测使用$/;"	m	struct:paas_event
+pvoid	include/sdc_common.h	/^    void* pvoid;$/;"	m	union:_uint64ptr
+qf	include/sdc_codec_iaas.h	/^	uint16_t qf;$/;"	m	struct:sdc_encode_jpeg_param
+reconn_interval	src/sdc_client.h	/^    int reconn_interval;$/;"	m	struct:sdc_client
+reconn_timer	src/sdc_client.h	/^    struct app_timer reconn_timer;$/;"	m	struct:sdc_client	typeref:struct:sdc_client::app_timer
+region	include/sdc_codec_iaas.h	/^	struct sdc_region region;$/;"	m	struct:sdc_encode_jpeg_param	typeref:struct:sdc_encode_jpeg_param::sdc_region
+region	include/sdc_codec_iaas.h	/^	struct sdc_region region;$/;"	m	struct:sdc_osd_region	typeref:struct:sdc_osd_region::sdc_region
+regions	include/sdc_video_iaas.h	/^	struct sdc_region regions[0];$/;"	m	struct:sdc_red_light_enhanced_param	typeref:struct:sdc_red_light_enhanced_param::sdc_region
+reserve	include/sdc_codec_iaas.h	/^	uint32_t reserve;$/;"	m	struct:sdc_combined_yuv_param
+reserve	include/sdc_codec_iaas.h	/^	uint32_t reserve;$/;"	m	struct:sdc_encode_jpeg_param
+reserve	include/sdc_codec_iaas.h	/^	uint32_t reserve;$/;"	m	struct:sdc_jpeg_frame
+reserve	include/sdc_codec_iaas.h	/^	uint32_t reserve;$/;"	m	struct:sdc_osd
+reserve	include/sdc_common.h	/^        uint32_t reserve;$/;"	m	struct:sdc_extend_head
+reserve	include/sdc_utils_iaas.h	/^	uint32_t reserve;$/;"	m	struct:sdc_mmz
+reserve	include/sdc_video_iaas.h	/^	uint32_t reserve;$/;"	m	struct:sdc_venc_data
+reserve	include/sdc_video_iaas.h	/^	uint32_t reserve;$/;"	m	struct:sdc_yuv_data
+reserve	include/sdc_video_iaas.h	/^	uint32_t reserve;$/;"	m	struct:sdc_yuv_frame
+resolution_modtify	include/sdc_video_iaas.h	/^    uint32_t resolution_modtify;$/;"	m	struct:sdc_yuv_channel_info
+response	include/sdc_common.h	/^        uint8_t         response: 1;$/;"	m	struct:sdc_common_head
+sdc_alarm	include/sdc_alarm_paas.h	/^struct sdc_alarm {$/;"	s
+sdc_chan_query	include/sdc_video_iaas.h	/^struct sdc_chan_query$/;"	s
+sdc_client	src/sdc_client.h	/^struct sdc_client {$/;"	s
+sdc_client_close	src/sdc_client.c	/^void sdc_client_close(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f
+sdc_client_connect	src/sdc_client.c	/^int sdc_client_connect(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f
+sdc_client_fd	src/sdc_client.h	/^static inline int sdc_client_fd(const struct sdc_client* client)$/;"	f
+sdc_client_init	src/sdc_client.c	/^void sdc_client_init(struct sdc_client* client, const char* server_name, int reconn_interval, const struct sdc_client_operations* sdc_ops)$/;"	f
+sdc_client_on_connect	src/sdc_client.c	/^static void sdc_client_on_connect(struct app_event* app_event, uint32_t events, struct app_ctx* app_ctx)$/;"	f	file:
+sdc_client_on_input	src/sdc_client.c	/^static void sdc_client_on_input(struct app_event* app_event, uint32_t events, struct app_ctx* app_ctx)$/;"	f	file:
+sdc_client_operations	src/sdc_client.h	/^struct sdc_client_operations {$/;"	s
+sdc_client_reconnect	src/sdc_client.c	/^static int sdc_client_reconnect(struct sdc_client* client, struct app_ctx* app_ctx)$/;"	f	file:
+sdc_client_try_connect	src/sdc_client.c	/^static void sdc_client_try_connect(struct app_timer* app_timer, struct app_ctx* app_ctx)$/;"	f	file:
+sdc_combined_yuv	include/sdc_codec_iaas.h	/^struct sdc_combined_yuv$/;"	s
+sdc_combined_yuv_param	include/sdc_codec_iaas.h	/^struct sdc_combined_yuv_param$/;"	s
+sdc_common_head	include/sdc_common.h	/^struct sdc_common_head$/;"	s
+sdc_config_param	include/sdc_config_paas.h	/^struct sdc_config_param {$/;"	s
+sdc_config_param_list	include/sdc_config_paas.h	/^struct sdc_config_param_list {$/;"	s
+sdc_encode_jpeg_param	include/sdc_codec_iaas.h	/^struct sdc_encode_jpeg_param$/;"	s
+sdc_event	src/sdc_client.h	/^    struct app_event sdc_event;$/;"	m	struct:sdc_client	typeref:struct:sdc_client::app_event
+sdc_extend_head	include/sdc_common.h	/^struct sdc_extend_head$/;"	s
+sdc_extend_head_first	include/sdc_common.h	63;"	d
+sdc_extend_head_length	include/sdc_common.h	59;"	d
+sdc_extend_head_next	include/sdc_common.h	61;"	d
+sdc_for_each_extend_head	include/sdc_common.h	65;"	d
+sdc_hardware_id	include/sdc_utils_iaas.h	/^struct sdc_hardware_id$/;"	s
+sdc_jpeg_frame	include/sdc_codec_iaas.h	/^struct sdc_jpeg_frame$/;"	s
+sdc_mmz	include/sdc_utils_iaas.h	/^struct sdc_mmz$/;"	s
+sdc_ops	src/sdc_client.h	/^    const struct sdc_client_operations* sdc_ops;$/;"	m	struct:sdc_client	typeref:struct:sdc_client::sdc_client_operations
+sdc_osd	include/sdc_codec_iaas.h	/^struct sdc_osd$/;"	s
+sdc_osd_box	include/sdc_codec_iaas.h	/^struct sdc_osd_box$/;"	s
+sdc_osd_env_desc	include/sdc_osd_iaas.h	/^struct sdc_osd_env_desc {$/;"	s
+sdc_osd_env_name	include/sdc_osd_iaas.h	/^struct sdc_osd_env_name {$/;"	s
+sdc_osd_env_value	include/sdc_osd_iaas.h	/^struct sdc_osd_env_value {$/;"	s
+sdc_osd_region	include/sdc_codec_iaas.h	/^struct sdc_osd_region$/;"	s
+sdc_red_light_enhanced_param	include/sdc_video_iaas.h	/^struct sdc_red_light_enhanced_param$/;"	s
+sdc_region	include/sdc_video_iaas.h	/^struct sdc_region$/;"	s
+sdc_resolution	include/sdc_video_iaas.h	/^struct sdc_resolution {$/;"	s
+sdc_shm_cache	include/sdc_shm.h	/^struct sdc_shm_cache$/;"	s
+sdc_shm_cache_free	include/sdc_shm.h	/^static inline int sdc_shm_cache_free(void* virt_addr, unsigned int size)$/;"	f
+sdc_tproxy_connection	include/sdc_tproxy_paas.h	/^struct sdc_tproxy_connection$/;"	s
+sdc_tproxy_server	include/sdc_tproxy_paas.h	/^struct sdc_tproxy_server $/;"	s
+sdc_venc_data	include/sdc_video_iaas.h	/^struct sdc_venc_data$/;"	s
+sdc_venc_frame	include/sdc_video_iaas.h	/^struct sdc_venc_frame$/;"	s
+sdc_yuv_channel_info	include/sdc_video_iaas.h	/^struct sdc_yuv_channel_info$/;"	s
+sdc_yuv_channel_param	include/sdc_video_iaas.h	/^struct sdc_yuv_channel_param$/;"	s
+sdc_yuv_data	include/sdc_video_iaas.h	/^struct sdc_yuv_data$/;"	s
+sdc_yuv_frame	include/sdc_video_iaas.h	/^struct sdc_yuv_frame$/;"	s
+sdc_yuv_snap_param	include/sdc_video_iaas.h	/^struct sdc_yuv_snap_param$/;"	s
+server_name	src/sdc_client.h	/^    const char* server_name;$/;"	m	struct:sdc_client
+shm_mmap	src/meta.c	/^static void* shm_mmap(struct paas_shm_cached_event* shm)$/;"	f	file:
+shm_munmap	src/meta.c	/^static void shm_munmap(struct paas_shm_cached_event* shm, void* virt_addr)$/;"	f	file:
+size	include/sdc_codec_iaas.h	/^	uint32_t size;$/;"	m	struct:sdc_jpeg_frame
+size	include/sdc_event_paas.h	/^	uint32_t size;$/;"	m	struct:paas_shm_cached_event
+size	include/sdc_shm.h	/^    unsigned int size;$/;"	m	struct:sdc_shm_cache
+size	include/sdc_utils_iaas.h	/^	uint32_t size;$/;"	m	struct:sdc_mmz
+size	include/sdc_video_iaas.h	/^	uint64_t size;$/;"	m	struct:sdc_venc_frame
+size	include/sdc_video_iaas.h	/^    uint32_t size;$/;"	m	struct:sdc_yuv_frame
+source	include/sdc_alarm_paas.h	/^    char source[32];$/;"	m	struct:sdc_alarm
+src_id	include/sdc_video_iaas.h	/^	uint32_t src_id;$/;"	m	struct:sdc_yuv_channel_info
+src_timestamp	include/sdc_event_paas.h	/^        uint64_t src_timestamp;  \/\/发生时的时间，单位毫秒（CLOCK_MONOTONIC时间）$/;"	m	struct:paas_event
+str_all_count	src/meta.c	/^    char str_all_count[32];$/;"	m	struct:module_metadata_ctx	file:
+str_count	src/meta.c	/^    char str_count[32];$/;"	m	struct:module_metadata_ctx	file:
+stride	include/sdc_video_iaas.h	/^	uint32_t stride;$/;"	m	struct:sdc_yuv_frame
+subscribe_cnt	include/sdc_video_iaas.h	/^	uint32_t subscribe_cnt;$/;"	m	struct:sdc_yuv_channel_info
+subscriber	include/sdc_event_paas.h	/^        char subscriber[16]; \/\/订阅者的标识, 调测使用$/;"	m	struct:paas_event_filter
+subscriber_cnt	include/sdc_event_paas.h	/^        uint32_t subscriber_cnt;$/;"	m	struct:paas_event_publish_stat
+tlv	src/meta.c	/^struct tlv {$/;"	s	file:
+tlv_for_each	src/meta.c	261;"	d	file:
+tran_timestamp	include/sdc_event_paas.h	/^        uint64_t tran_timestamp; \/\/服务转发的时间，单位毫秒（CLOCK_MONOTONIC时间）$/;"	m	struct:paas_event
+trans_cnt	include/sdc_event_paas.h	/^        uint64_t trans_cnt; \/\/成功转发的次数$/;"	m	struct:paas_event_publish_stat
+trans_id	include/sdc_common.h	/^        uint16_t        trans_id;$/;"	m	struct:sdc_common_head
+type	include/sdc_common.h	/^        uint16_t type;$/;"	m	struct:sdc_extend_head
+type	include/sdc_tproxy_paas.h	/^    int type;$/;"	m	struct:sdc_tproxy_connection
+type	include/sdc_tproxy_paas.h	/^    int type;$/;"	m	struct:sdc_tproxy_server
+type	src/meta.c	/^    uint32_t type;$/;"	m	struct:tlv	file:
+u32	include/sdc_common.h	/^    uint32_t u32;$/;"	m	union:_uint64ptr
+u64	include/sdc_common.h	/^    uint64_t u64;$/;"	m	union:_uint64ptr
+uImgHeight	include/sdc_video_iaas.h	/^    uint32_t uImgHeight;  \/*图像的高度，用来计算比例*\/$/;"	m	struct:sdc_red_light_enhanced_param
+uImgWidth	include/sdc_video_iaas.h	/^	uint32_t uImgWidth;  \/*图像的宽度，用来计算比例*\/$/;"	m	struct:sdc_red_light_enhanced_param
+uint64ptr_t	include/sdc_common.h	/^} uint64ptr_t;$/;"	t	typeref:union:_uint64ptr
+ulpts	include/sdc_video_iaas.h	/^	uint64_t ulpts;$/;"	m	struct:sdc_venc_data
+url	include/sdc_common.h	/^        uint16_t        url;$/;"	m	struct:sdc_common_head
+url_ver	include/sdc_common.h	/^        uint8_t         url_ver;$/;"	m	struct:sdc_common_head
+val	src/meta.c	/^    char val[0];$/;"	m	struct:tlv	file:
+value	include/sdc_config_paas.h	/^    char* value;$/;"	m	struct:sdc_config_param
+value	include/sdc_osd_iaas.h	/^    char value[128];$/;"	m	struct:sdc_osd_env_value
+version	include/sdc_common.h	/^        uint16_t        version;$/;"	m	struct:sdc_common_head
+w	include/sdc_video_iaas.h	/^	uint32_t w;$/;"	m	struct:sdc_region
+watchdog_time	include/sdc_appmgr_paas.h	/^    int32_t watchdog_time;$/;"	m	struct:appdog_op_req
+width	include/sdc_codec_iaas.h	/^	uint32_t width;$/;"	m	struct:sdc_combined_yuv_param
+width	include/sdc_codec_iaas.h	/^	uint32_t width;$/;"	m	struct:sdc_osd_box
+width	include/sdc_video_iaas.h	/^	uint32_t width;$/;"	m	struct:sdc_resolution
+width	include/sdc_video_iaas.h	/^	uint32_t width;$/;"	m	struct:sdc_venc_frame
+width	include/sdc_video_iaas.h	/^	uint32_t width;$/;"	m	struct:sdc_yuv_channel_param
+width	include/sdc_video_iaas.h	/^	uint32_t width;$/;"	m	struct:sdc_yuv_frame
+x	include/sdc_video_iaas.h	/^	uint32_t x;$/;"	m	struct:sdc_region
+y	include/sdc_video_iaas.h	/^	uint32_t y;$/;"	m	struct:sdc_region
+yuv	include/sdc_codec_iaas.h	/^	struct sdc_combined_yuv yuv[0];$/;"	m	struct:sdc_combined_yuv_param	typeref:struct:sdc_combined_yuv_param::sdc_combined_yuv
+yuv_cnt	include/sdc_codec_iaas.h	/^	uint32_t yuv_cnt;$/;"	m	struct:sdc_combined_yuv_param

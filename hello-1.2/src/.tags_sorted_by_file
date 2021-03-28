@@ -30,7 +30,7 @@ module	config.c	/^    struct app_module module;$/;"	m	struct:module_config_ctx	t
 module_config_ctx	config.c	/^struct module_config_ctx {$/;"	s	file:
 module_config_init	config.c	/^struct app_module* module_config_init(struct app_ctx* app_ctx)$/;"	f
 MODULE_CONFIG_H	config.h	3;"	d
-TIME_UNIT	event.c	57;"	d	file:
+TIME_UNIT	event.c	75;"	d	file:
 app_event_add	event.c	/^int app_event_add(struct app_event* event, uint32_t events, struct app_ctx* app_ctx)$/;"	f
 app_event_del	event.c	/^void app_event_del(struct app_event* event, struct app_ctx* app_ctx)$/;"	f
 app_event_del_close	event.c	/^void app_event_del_close(struct app_event* event, struct app_ctx* app_ctx)$/;"	f
@@ -40,11 +40,11 @@ app_timer_add	event.c	/^int app_timer_add(struct app_timer* timer, uint32_t time
 app_timer_del	event.c	/^void app_timer_del(struct app_timer* timer, struct app_ctx* app_ctx)$/;"	f
 app_timer_handle	event.c	/^static void app_timer_handle(struct app_event* app_event, uint32_t events, struct app_ctx* app_ctx)$/;"	f	file:
 app_timer_init	event.c	/^void app_timer_init(struct app_timer* timer, pf_app_timer_handle handle)$/;"	f
-APP_EVENT_H	event.h	2;"	d
+APP_EVENT_H	event.h	6;"	d
 app_event	event.h	/^struct app_event {$/;"	s
 app_timer	event.h	/^struct app_timer {$/;"	s
 base	event.h	/^    struct app_event base;$/;"	m	struct:app_timer	typeref:struct:app_timer::app_event
-container_of	event.h	13;"	d
+container_of	event.h	20;"	d
 fd	event.h	/^    int fd;$/;"	m	struct:app_event
 handle	event.h	/^    pf_app_event_handle handle;$/;"	m	struct:app_event
 handle	event.h	/^    pf_app_timer_handle handle;$/;"	m	struct:app_timer
@@ -151,21 +151,21 @@ tlv_for_each	meta.c	261;"	d	file:
 type	meta.c	/^    uint32_t type;$/;"	m	struct:tlv	file:
 val	meta.c	/^    char val[0];$/;"	m	struct:tlv	file:
 MODULE_METADATA_H	meta.h	3;"	d
-APP_MODULE_H	module.h	3;"	d
-APP_NAME_MAX	module.h	14;"	d
-APP_NULL_MODULE	module.h	55;"	d
+APP_MODULE_H	module.h	5;"	d
+APP_NAME_MAX	module.h	16;"	d
+APP_NULL_MODULE	module.h	62;"	d
 app	module.h	/^    struct app_ctx* app;$/;"	m	struct:app_module	typeref:struct:app_module::app_ctx
 app_ctx	module.h	/^struct app_ctx {$/;"	s
 app_module	module.h	/^struct app_module {$/;"	s
 config_get	module.h	/^    int (*config_get)(struct app_module* module, struct sdc_config_param* params, int cnt);$/;"	m	struct:app_module
 config_update	module.h	/^    int (*config_update)(struct app_module* module, struct sdc_config_param* params, int cnt);$/;"	m	struct:app_module
-epoll_fd	module.h	/^    int epoll_fd;$/;"	m	struct:app_ctx
-module_list	module.h	/^    struct app_module* module_list;$/;"	m	struct:app_ctx	typeref:struct:app_ctx::app_module
-name	module.h	/^    char name[APP_NAME_MAX];$/;"	m	struct:app_ctx
+epoll_fd	module.h	/^    int epoll_fd;   \/\/记录epoll文件的描述符$/;"	m	struct:app_ctx
+module_list	module.h	/^    struct app_module* module_list; \/\/记录APP第一个模块的地址，作为一整个APP模块链表的表头。$/;"	m	struct:app_ctx	typeref:struct:app_ctx::app_module
+name	module.h	/^    char name[APP_NAME_MAX];    \/\/存储APP名称$/;"	m	struct:app_ctx
 name	module.h	/^    const char* name;$/;"	m	struct:app_module
 next	module.h	/^    struct app_module* next;$/;"	m	struct:app_module	typeref:struct:app_module::app_module
 osd_connect	module.h	/^    void (*osd_connect)(struct app_module* module);$/;"	m	struct:app_module
-pf_module_init	module.h	/^typedef struct app_module* (*pf_module_init)(struct app_ctx* ctx);$/;"	t	typeref:struct:pf_module_init
+pf_module_init	module.h	/^typedef struct app_module* (*pf_module_init)(struct app_ctx* ctx);  \/\/声明一个$/;"	t	typeref:struct:pf_module_init
 base	osd.c	/^    struct sdc_client base;$/;"	m	struct:module_osd_ctx	typeref:struct:module_osd_ctx::sdc_client	file:
 g_osd_ctx	osd.c	/^static struct module_osd_ctx g_osd_ctx = {$/;"	v	typeref:struct:module_osd_ctx	file:
 g_osd_ops	osd.c	/^static const struct sdc_client_operations g_osd_ops = {$/;"	v	typeref:struct:sdc_client_operations	file:
